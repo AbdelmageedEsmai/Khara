@@ -27,11 +27,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     fun addPermissions() {
         val PERMISSION_ALL = 1
         val PERMISSIONS = arrayOf(
             Manifest.permission.READ_EXTERNAL_STORAGE,
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.READ_MEDIA_IMAGES
 //            ,
 //            Manifest.permission.READ_MEDIA_IMAGES,
 //            Manifest.permission.READ_MEDIA_AUDIO,
